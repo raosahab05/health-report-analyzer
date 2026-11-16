@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+env/
+
+# Private data: uploaded reports and saved analysis history
+uploads/
+report_history.json
+
+# Secrets and local settings
+.env
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db

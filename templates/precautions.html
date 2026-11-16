@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Precautions - HealthCare</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <script>
+        try { document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light'); } catch (e) {}
+    </script>
+</head>
+
+<body>
+
+    <!-- ========================= NAVBAR ========================= -->
+    <header class="navbar">
+        <div class="logo">Health<span>Care</span></div>
+
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('analysis') }}">Analysis</a>
+            <a href="{{ url_for('diet') }}">Diet &amp; Guidance</a>
+            <a href="{{ url_for('precautions') }}" class="active">Precautions</a>
+            <a href="{{ url_for('trends') }}">Health History</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <a href="{{ url_for('upload') }}" class="primary-btn">Upload Report</a>
+        </div>
+    </header>
+
+
+    <!-- ========================= MAIN ========================= -->
+    <main class="precaution-section">
+        <div class="precaution-container">
+
+            <section class="precaution-heading">
+                <p class="tagline">YOUR DAILY CARE ROUTINE</p>
+                <h1>Precautions, Hour by Hour</h1>
+                <p>
+                    {% if report_name and report_name != "No Report Available" %}
+                        Based on <strong>{{ report_name }}</strong>, analysed on {{ analysis_date }}.
+                        Simple habits and things to avoid, from morning till bedtime.
+                    {% else %}
+                        Upload and analyse a report to personalise this routine. Until then, here is a
+                        healthy everyday routine.
+                    {% endif %}
+                </p>
+            </section>
+
+            {% include "_day_plan.html" %}
+
+            <section class="warning-card">
+                <p class="small-heading">SEE A DOCTOR SOON IF</p>
+                <ul class="plan-notes">
+                    {% for sign in schedule.signs %}
+                    <li>{{ sign }}</li>
+                    {% endfor %}
+                </ul>
+            </section>
+
+            <section class="analysis-disclaimer">
+                <div class="disclaimer-icon">!</div>
+                <div>
+                    <h3>General Information Only</h3>
+                    <p>
+                        These precautions are general guidance based on your report. They do not
+                        diagnose any condition or replace advice from a qualified healthcare
+                        professional. Never stop or change prescribed medicines on your own.
+                    </p>
+                </div>
+            </section>
+
+            <section class="precaution-actions">
+                <a href="{{ url_for('analysis') }}" class="secondary-button">Back to Analysis</a>
+                <a href="{{ url_for('diet') }}" class="primary-button">View Diet Plan</a>
+            </section>
+
+        </div>
+    </main>
+
+
+    <!-- ========================= FOOTER ========================= -->
+    <footer class="footer">
+        <p>Health Report Understanding &amp; Monitoring System</p>
+        <p>For general informational purposes only.</p>
+    </footer>
+
+    <div class="floating-theme-switcher">
+        <button id="themeToggleBtn" class="theme-toggle-btn" onclick="toggleNextTheme()">🌙</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>

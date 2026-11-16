@@ -1,0 +1,52 @@
+{# Shared timeline. Needs a `schedule` variable from daily_plan.py #}
+{% if schedule.personalised %}
+<div class="plan-flagged">
+    <p class="small-heading">PERSONALISED FOR YOUR REPORT</p>
+    <div class="plan-chips">
+        {% for label in schedule.conditions %}
+        <span class="plan-chip">{{ label }}</span>
+        {% endfor %}
+    </div>
+    <p class="plan-flagged-note">From your report: {{ schedule.flagged|join(", ") }}</p>
+</div>
+{% endif %}
+
+<div class="day-plan">
+    {% for slot in schedule.slots %}
+    <article class="plan-slot">
+        <div class="plan-card">
+            <div class="plan-head">
+                <div class="plan-icon">{{ slot.icon }}</div>
+                <div>
+                    <h3>{{ slot.label }}: {{ slot.title }}</h3>
+                    <p class="plan-subtitle">{{ slot.subtitle }}</p>
+                </div>
+                <span class="plan-time">{{ slot.time }}</span>
+            </div>
+
+            <ul class="plan-items">
+                {% for step in slot.steps %}
+                <li class="{{ 'avoid' if step.kind == 'avoid' else 'do' }}">
+                    <span class="plan-mark">{{ '✕' if step.kind == 'avoid' else '✓' }}</span>
+                    <div class="plan-item-body">
+                        {{ step.text }}
+                        {% if step.tag %}<span class="plan-tag">{{ step.tag }}</span>{% endif %}
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </article>
+    {% endfor %}
+</div>
+
+{% if schedule.notes %}
+<div class="summary-card">
+    <p class="small-heading">KEEP IN MIND</p>
+    <ul class="plan-notes">
+        {% for note in schedule.notes %}
+        <li>{{ note }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Analyzing Report - HealthCare</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Saved theme ko page load se pehle apply karta hai (dark mode flash nahi aata) -->
+    <script>
+        try {
+            document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light');
+        } catch (e) {}
+    </script>
+</head>
+
+<body>
+
+    <!-- ========================= NAVBAR ========================= -->
+    <header class="navbar">
+
+        <div class="logo">
+            Health<span>Care</span>
+        </div>
+
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('home') }}#features">Features</a>
+            <a href="{{ url_for('home') }}#how-it-works">How It Works</a>
+            <a href="{{ url_for('home') }}#about">About</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ========================= PROCESSING SECTION ========================= -->
+    <section class="processing-section">
+
+        <!-- data-next-url: animation khatam hone ke baad is page pe redirect hoga -->
+        <div class="processing-card" data-next-url="{{ url_for('analysis') }}">
+
+            <div class="processing-icon">🔍</div>
+
+            <p class="tagline">REPORT ANALYSIS</p>
+
+            <h1 id="processingTitle">Analyzing Your Report</h1>
+
+            <p class="processing-text" id="processingText">
+                Please wait while the system processes your
+                health report and prepares the information.
+            </p>
+
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+
+            <!-- Processing Steps -->
+            <div class="processing-steps">
+
+                <!-- Step 1 -->
+                <div class="processing-step completed">
+                    <span>✓</span>
+                    <div>
+                        <strong>Report Uploaded</strong>
+                        <p>Your report has been received.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="processing-step active">
+                    <span>⟳</span>
+                    <div>
+                        <strong>Reading Report</strong>
+                        <p>Reading information from the report.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="processing-step">
+                    <span>○</span>
+                    <div>
+                        <strong>Identifying Parameters</strong>
+                        <p>Finding important health parameters.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="processing-step">
+                    <span>○</span>
+                    <div>
+                        <strong>Preparing Health Summary</strong>
+                        <p>Organizing the report information.</p>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="processing-step">
+                    <span>○</span>
+                    <div>
+                        <strong>Preparing Guidance</strong>
+                        <p>Preparing general health information.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= FOOTER ========================= -->
+    <footer>
+
+        <div class="footer-content">
+            <div>
+                <div class="logo">
+                    Health<span>Care</span>
+                </div>
+                <p>Health Report Understanding &amp; Monitoring System</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Health Report System. All rights reserved.</p>
+            <p>For informational purposes only.</p>
+        </div>
+
+    </footer>
+
+
+    <!-- ========================= THEME BUTTON ========================= -->
+    <div class="floating-theme-switcher">
+        <button id="themeToggleBtn" class="theme-toggle-btn" onclick="toggleNextTheme()">🌙</button>
+    </div>
+
+
+    <!-- ========================= JAVASCRIPT ========================= -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
