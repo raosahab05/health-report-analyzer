@@ -1,25 +1,40 @@
 # 🏥 Health Report Analyzer
 
-A Flask-based web application designed to help users understand their health reports through report analysis, personalized diet guidance, precautions, and health monitoring.
+**Understand Your Health Reports. Track Your Progress.**
 
-## 📌 About the Project
+Health Report Analyzer is a web-based application built with Python and Flask that helps users understand health report information through report analysis, diet guidance, health precautions, and historical health trends.
 
-**Health Report Analyzer** is a web-based healthcare assistance project that allows users to upload their health reports and understand important health parameters in a simple and user-friendly way.
+## 📸 Project Preview
 
-The application provides report analysis, dietary guidance, health precautions, and historical health tracking through an interactive dashboard.
+### Home Page
+![Home Page](Screenshots/home.png)
+
+### Report Upload
+![Upload Page](Screenshots/upload.png)
+
+### Report Analysis
+![Analysis Page](Screenshots/analysis.png)
+
+### Diet & Guidance
+![Diet Page](Screenshots/diet.png)
+
+### Health Precautions
+![Precautions Page](Screenshots/precaution.png)
+
+### Health Trends
+![Health Trends](Screenshots/treands.png)
 
 ## ✨ Features
 
-- 📄 **Report Upload:** Upload health reports for processing and analysis.
-- 🔍 **Report Analysis:** Extract and understand important health parameters.
-- 🥗 **Diet Guidance:** Get diet-related suggestions based on report analysis.
-- 🛡️ **Health Precautions:** View relevant precautions and recommendations.
-- 📊 **Health Trends:** Monitor and compare previously recorded health data.
-- 📅 **Daily Diet Plan:** View a structured daily diet routine.
-- 📁 **Report History:** Maintain a history of previously processed reports.
-- 💻 **Responsive Interface:** User-friendly web interface.
+- **Report Upload:** Upload supported health report files.
+- **Report Analysis:** Extract and display available health report information.
+- **Diet Guidance:** View diet suggestions based on available analysis.
+- **Health Precautions:** Display relevant health precautions.
+- **Health History:** Review previously saved report information.
+- **Health Trends:** Monitor changes in available health indicators over time.
+- **User-Friendly Interface:** Simple and organized dashboard.
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
 
 | Technology | Purpose |
 |---|---|
@@ -30,19 +45,19 @@ The application provides report analysis, dietary guidance, health precautions, 
 | JavaScript | Frontend interactions |
 | PyPDF | PDF text extraction |
 | PyMuPDF | PDF processing |
-| Tesseract OCR | Text extraction from scanned reports |
-| SQLite / JSON | Data storage |
+| Tesseract OCR | Text recognition from images |
+| Pillow | Image processing |
 
 ## 📂 Project Structure
 
 ```text
-health-report-analyzer/
+Health-Report-Analyzer/
 │
 ├── app.py
 ├── daily_plan.py
 ├── requirements.txt
-├── README.md
 ├── .gitignore
+├── README.md
 │
 ├── static/
 │   ├── css/
@@ -50,15 +65,23 @@ health-report-analyzer/
 │   └── js/
 │       └── script.js
 │
-└── templates/
-    ├── _day_plan.html
-    ├── analysis.html
-    ├── diet.html
-    ├── index.html
-    ├── precautions.html
-    ├── processing.html
-    ├── trends.html
-    └── upload.html
+├── templates/
+│   ├── index.html
+│   ├── upload.html
+│   ├── processing.html
+│   ├── analysis.html
+│   ├── diet.html
+│   ├── precautions.html
+│   ├── trends.html
+│   └── _day_plan.html
+│
+└── Screenshots/
+    ├── home.png
+    ├── upload.png
+    ├── analysis.png
+    ├── diet.png
+    ├── precaution.png
+    └── treands.png
 ```
 
 ## ⚙️ Installation & Setup
@@ -69,7 +92,7 @@ health-report-analyzer/
 git clone https://github.com/raosahab05/health-report-analyzer.git
 ```
 
-### 2. Navigate to Project Directory
+### 2. Open the Project Folder
 
 ```bash
 cd health-report-analyzer
@@ -83,10 +106,10 @@ python -m venv venv
 
 ### 4. Activate Virtual Environment
 
-**Windows PowerShell:**
+**Windows:**
 
 ```powershell
-.\venv\Scripts\Activate.ps1
+venv\Scripts\activate
 ```
 
 ### 5. Install Dependencies
@@ -101,7 +124,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-### 7. Open in Browser
+Open your browser and visit:
 
 ```text
 http://127.0.0.1:5000
@@ -109,15 +132,14 @@ http://127.0.0.1:5000
 
 ## 🔮 Future Improvements
 
-- AI-powered health report explanations.
-- Improved health parameter detection.
-- Advanced health trend visualization.
-- Enhanced report comparison.
-- More personalized diet recommendations.
+- Improved report interpretation.
+- More detailed health trend visualizations.
+- Enhanced report history management.
+- Better user experience and dashboard features.
 
 ## ⚠️ Disclaimer
 
-This project is developed for educational purposes. It is not a substitute for professional medical advice, diagnosis, or treatment. Users should consult qualified healthcare professionals for medical decisions.
+This project is developed for educational purposes. Its output is not a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional for medical decisions.
 
 ## 👨‍💻 Developer
 
