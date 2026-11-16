@@ -1,55 +1,131 @@
-# Health Report Analyzer
+# 🏥 Health Report Analyzer
 
-A Flask web app that reads a laboratory health report (PDF or image), extracts the values,
-and shows a simple analysis, a daily diet plan, daily precautions and a health history trend.
-> For general informational purposes only. It does not diagnose any condition or replace
-> advice from a qualified healthcare professional.
+A Flask-based web application designed to help users understand their health reports through report analysis, personalized diet guidance, precautions, and health monitoring.
 
-## Features
+## 📌 About the Project
 
-- Upload a digital PDF, scanned PDF or photo of a report (OCR with Tesseract)
-- Extracts common parameters (CBC, lipid profile, kidney, liver, thyroid, vitamins and more)
-- Highlights values outside the reference range
-- Time-of-day diet plan and precautions (morning to bedtime) based on the report
-- Health history with trend charts across uploaded reports
-- Light and dark mode
+**Health Report Analyzer** is a web-based healthcare assistance project that allows users to upload their health reports and understand important health parameters in a simple and user-friendly way.
 
-## Setup
+The application provides report analysis, dietary guidance, health precautions, and historical health tracking through an interactive dashboard.
 
-1. Install [Python 3.10+](https://www.python.org/downloads/)
-2. Install [Tesseract OCR](https://github.com/UB-Mannheim/tesseract/wiki) (Windows default path:
-   `C:\Program Files\Tesseract-OCR\tesseract.exe`)
-3. Install the packages:
+## ✨ Features
 
-   ```
-   pip install -r requirements.txt
-   ```
+- 📄 **Report Upload:** Upload health reports for processing and analysis.
+- 🔍 **Report Analysis:** Extract and understand important health parameters.
+- 🥗 **Diet Guidance:** Get diet-related suggestions based on report analysis.
+- 🛡️ **Health Precautions:** View relevant precautions and recommendations.
+- 📊 **Health Trends:** Monitor and compare previously recorded health data.
+- 📅 **Daily Diet Plan:** View a structured daily diet routine.
+- 📁 **Report History:** Maintain a history of previously processed reports.
+- 💻 **Responsive Interface:** User-friendly web interface.
 
-4. Run the app:
+## 🛠️ Technologies Used
 
-   ```
-   python app.py
-   ```
+| Technology | Purpose |
+|---|---|
+| Python | Backend programming |
+| Flask | Web framework |
+| HTML5 | Page structure |
+| CSS3 | Styling and layout |
+| JavaScript | Frontend interactions |
+| PyPDF | PDF text extraction |
+| PyMuPDF | PDF processing |
+| Tesseract OCR | Text extraction from scanned reports |
+| SQLite / JSON | Data storage |
 
-5. Open http://127.0.0.1:5000
+## 📂 Project Structure
 
-Optional: set your own secret key before running.
-
+```text
+health-report-analyzer/
+│
+├── app.py
+├── daily_plan.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+│
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       └── script.js
+│
+└── templates/
+    ├── _day_plan.html
+    ├── analysis.html
+    ├── diet.html
+    ├── index.html
+    ├── precautions.html
+    ├── processing.html
+    ├── trends.html
+    └── upload.html
 ```
-set FLASK_SECRET_KEY=your-own-long-random-string
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/raosahab05/health-report-analyzer.git
 ```
 
-## Project structure
+### 2. Navigate to Project Directory
 
-```
-app.py              Flask routes and report analysis
-daily_plan.py       Time-of-day diet and precaution plans
-templates/          HTML pages (Jinja)
-static/css/         Styles
-static/js/          Page scripts
+```bash
+cd health-report-analyzer
 ```
 
-## Privacy
+### 3. Create a Virtual Environment
 
-Uploaded files are deleted right after text extraction. Analysis history is stored locally in
-`report_history.json`, which is excluded from this repository. Do not commit real patient reports.
+```bash
+python -m venv venv
+```
+
+### 4. Activate Virtual Environment
+
+**Windows PowerShell:**
+
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+### 5. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 6. Run the Application
+
+```bash
+python app.py
+```
+
+### 7. Open in Browser
+
+```text
+http://127.0.0.1:5000
+```
+
+## 🔮 Future Improvements
+
+- AI-powered health report explanations.
+- Improved health parameter detection.
+- Advanced health trend visualization.
+- Enhanced report comparison.
+- More personalized diet recommendations.
+
+## ⚠️ Disclaimer
+
+This project is developed for educational purposes. It is not a substitute for professional medical advice, diagnosis, or treatment. Users should consult qualified healthcare professionals for medical decisions.
+
+## 👨‍💻 Developer
+
+**Yuvraj Yadav**
+
+- GitHub: [@raosahab05](https://github.com/raosahab05)
+- Project: [Health Report Analyzer](https://github.com/raosahab05/health-report-analyzer)
+
+---
+
+⭐ If you find this project interesting, consider giving it a star!
