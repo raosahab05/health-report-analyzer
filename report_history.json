@@ -1,0 +1,675 @@
+[
+  {
+    "report_id": "6984a24a7bb74718a42da4970937f53f",
+    "file_hash": "77ea441d2a63ba756791e6d1ab6b2cd0bf588b55c55446fd92901384ab6a381b",
+    "report_name": "CBC-test-report-format-example-sample-template-Drlogy-lab-report.pdf",
+    "report_type": "Blood Test Report",
+    "test_name": "Complete Blood Count",
+    "test_result": "Not Applicable",
+    "patient_info": {
+      "age": "21 Years",
+      "gender": "Male",
+      "report_status": "Not Available",
+      "report_date": "Not Available"
+    },
+    "report_date": "15/11/2026",
+    "report_date_display": "15 Nov 2026",
+    "analysis_date": "15 November 2026, 11:36 AM",
+    "parameters": {
+      "MCV": {
+        "value": "87.75",
+        "numeric_value": 87.75,
+        "unit": "fL",
+        "reference_range": "83 - 101",
+        "status": "Normal"
+      },
+      "MCH": {
+        "value": "27.2",
+        "numeric_value": 27.2,
+        "unit": "pg",
+        "reference_range": "27 - 32",
+        "status": "Normal"
+      },
+      "MCHC": {
+        "value": "32.8",
+        "numeric_value": 32.8,
+        "unit": "g/dL",
+        "reference_range": "32.5 - 34.5",
+        "status": "Normal"
+      },
+      "RBC Count": {
+        "value": "5.2",
+        "numeric_value": 5.2,
+        "unit": "mill/cumm",
+        "reference_range": "4.5 - 5.5",
+        "status": "Normal"
+      },
+      "WBC Count": {
+        "value": "9000",
+        "numeric_value": 9000.0,
+        "unit": "cumm",
+        "reference_range": "4000 - 11000",
+        "status": "Normal"
+      },
+      "Neutrophils": {
+        "value": "60",
+        "numeric_value": 60.0,
+        "unit": "%",
+        "reference_range": "50 - 62",
+        "status": "Normal"
+      },
+      "Lymphocytes": {
+        "value": "31",
+        "numeric_value": 31.0,
+        "unit": "%",
+        "reference_range": "20 - 40",
+        "status": "Normal"
+      },
+      "Eosinophils": {
+        "value": "1",
+        "numeric_value": 1.0,
+        "unit": "%",
+        "reference_range": "0 - 6",
+        "status": "Normal"
+      },
+      "Monocytes": {
+        "value": "7",
+        "numeric_value": 7.0,
+        "unit": "%",
+        "reference_range": "0 - 10",
+        "status": "Normal"
+      },
+      "Basophils": {
+        "value": "1",
+        "numeric_value": 1.0,
+        "unit": "%",
+        "reference_range": "0 - 2",
+        "status": "Normal"
+      },
+      "Hemoglobin": {
+        "value": 12.5,
+        "numeric_value": 12.5,
+        "unit": "g/dL",
+        "reference_range": "13 - 17",
+        "status": "Low"
+      },
+      "Platelet Count": {
+        "value": 150000.0,
+        "numeric_value": 150000.0,
+        "unit": "/cumm",
+        "reference_range": "150000 - 410000",
+        "status": "Normal"
+      },
+      "Hematocrit": {
+        "value": 57.5,
+        "numeric_value": 57.5,
+        "unit": "%",
+        "reference_range": "40 - 50",
+        "status": "High"
+      },
+      "RDW CV": {
+        "value": 13.6,
+        "numeric_value": 13.6,
+        "unit": "%",
+        "reference_range": "11.6 - 14",
+        "status": "Normal"
+      }
+    },
+    "qualitative_results": []
+  },
+  {
+    "report_id": "821c16aca39141e3baca7dfe798b5175",
+    "file_hash": "628ecd64150df0027c57997519802bac9ccd25d9a4d734e935e45e0ba79ee9ca",
+    "report_name": "sterling-accuris-pathology-sample-report-unlocked.pdf",
+    "report_type": "Comprehensive Laboratory Test Report",
+    "test_name": "Multiple Laboratory Panels",
+    "test_result": "2 Parameter(s) Out of Range",
+    "patient_info": {
+      "age": "Not Available",
+      "gender": "Male",
+      "report_status": "Final",
+      "report_date": "15/11/2026"
+    },
+    "report_date": "15/11/2026",
+    "report_date_display": "15 Nov 2026",
+    "analysis_date": "15 November 2026, 11:59 AM",
+    "parameters": {
+      "SGOT": {
+        "value": 10.0,
+        "numeric_value": 10.0,
+        "unit": "U/L",
+        "reference_range": "17 - 59",
+        "status": "Low"
+      },
+      "Vitamin D": {
+        "value": 3.0,
+        "numeric_value": 3.0,
+        "unit": "ng/mL",
+        "reference_range": "30 - 100",
+        "status": "Low"
+      },
+      "Microalbumin": {
+        "value": 16.7,
+        "numeric_value": 16.7,
+        "unit": "mg/L",
+        "reference_range": "0 - 16.7",
+        "status": "Normal"
+      },
+      "Uric Acid": {
+        "value": 4.9,
+        "numeric_value": 4.9,
+        "unit": "mg/dL",
+        "reference_range": "3.5 - 8.5",
+        "status": "Normal"
+      },
+      "Sodium": {
+        "value": 143.0,
+        "numeric_value": 143.0,
+        "unit": "mEq/L",
+        "reference_range": "136 - 145",
+        "status": "Normal"
+      },
+      "Potassium": {
+        "value": 4.9,
+        "numeric_value": 4.9,
+        "unit": "mEq/L",
+        "reference_range": "3.5 - 5.1",
+        "status": "Normal"
+      },
+      "Chloride": {
+        "value": 105.0,
+        "numeric_value": 105.0,
+        "unit": "mEq/L",
+        "reference_range": "98 - 107",
+        "status": "Normal"
+      },
+      "VLDL": {
+        "value": 33.6,
+        "numeric_value": 33.6,
+        "unit": "mg/dL",
+        "reference_range": "15 - 35",
+        "status": "Normal"
+      }
+    },
+    "qualitative_results": [
+      {
+        "name": "HIV I & II Ab/Ag P24 Ag",
+        "result": "Non Reactive",
+        "interpretation": "Non Reactive"
+      },
+      {
+        "name": "HBsAg",
+        "result": "Non Reactive",
+        "interpretation": "Non Reactive"
+      },
+      {
+        "name": "Hb Electrophoresis",
+        "result": "Negative for typical beta thalassemia trait.",
+        "interpretation": "Negative"
+      },
+      {
+        "name": "Urine Glucose",
+        "result": "Absent",
+        "interpretation": "Absent"
+      },
+      {
+        "name": "Urine Protein",
+        "result": "Absent",
+        "interpretation": "Absent"
+      },
+      {
+        "name": "Urine Urobilinogen",
+        "result": "Absent",
+        "interpretation": "Absent"
+      },
+      {
+        "name": "Urine Ketone",
+        "result": "Absent",
+        "interpretation": "Absent"
+      },
+      {
+        "name": "Urine Nitrite",
+        "result": "Absent",
+        "interpretation": "Absent"
+      }
+    ]
+  },
+  {
+    "report_id": "e928a65bfccf49eab0deefa9015966b2",
+    "file_hash": "31ad5f9b665b365d7b1df0b690c58d20e5853ff3faa11c945f252ee3bd31e61a",
+    "report_name": "467227fb335d8990935e.png",
+    "report_type": "Lipid Profile Report",
+    "test_name": "Lipid Profile",
+    "test_result": "2 of 7 Parameters Out of Range",
+    "patient_info": {
+      "age": "20 Years",
+      "gender": "Male",
+      "report_status": "Reported",
+      "report_date": "24/06/2023 09:02 PM"
+    },
+    "report_date": "24/06/2023 09:02 PM",
+    "report_date_display": "24 Jun 2023",
+    "analysis_date": "15 November 2026, 12:05 PM",
+    "parameters": {
+      "Total Cholesterol": {
+        "value": 156.0,
+        "numeric_value": 156.0,
+        "unit": "mg/dL",
+        "reference_range": "0 - 200",
+        "status": "Normal"
+      },
+      "Triglycerides": {
+        "value": 150.0,
+        "numeric_value": 150.0,
+        "unit": "mg/dL",
+        "reference_range": "0 - 170",
+        "status": "Normal"
+      },
+      "HDL Cholesterol": {
+        "value": 45.0,
+        "numeric_value": 45.0,
+        "unit": "mg/dL",
+        "reference_range": "40 - 70",
+        "status": "Normal"
+      },
+      "LDL Cholesterol": {
+        "value": 81.0,
+        "numeric_value": 81.0,
+        "unit": "mg/dL",
+        "reference_range": "0 - 100",
+        "status": "Normal"
+      },
+      "VLDL": {
+        "value": 30.0,
+        "numeric_value": 30.0,
+        "unit": "mg/dL",
+        "reference_range": "6 - 38",
+        "status": "Normal"
+      },
+      "LDL/HDL Ratio": {
+        "value": 1.8,
+        "numeric_value": 1.8,
+        "unit": "Ratio",
+        "reference_range": "2.5 - 3.5",
+        "status": "Low"
+      },
+      "Total Cholesterol/HDL Ratio": {
+        "value": 3.47,
+        "numeric_value": 3.47,
+        "unit": "Ratio",
+        "reference_range": "3.5 - 5",
+        "status": "Low"
+      }
+    },
+    "qualitative_results": []
+  },
+  {
+    "report_id": "7b6a938b68c9456794273650c78fd7dd",
+    "file_hash": "40790940e010a91077fa0ab33c3f84b967b60f1a859521d463b049690499516e",
+    "report_name": "Reports-550532.pdf",
+    "report_type": "Blood Test Report",
+    "test_name": "Complete Blood Count",
+    "test_result": "6 of 15 Parameters Out of Range",
+    "patient_info": {
+      "age": "25 Years",
+      "gender": "Male",
+      "report_status": "Reported",
+      "report_date": "26/10/2026  18:15"
+    },
+    "report_date": "26/10/2026  18:15",
+    "report_date_display": "26 Oct 2026",
+    "analysis_date": "15 November 2026, 05:47 PM",
+    "parameters": {
+      "Hemoglobin": {
+        "value": 14.9,
+        "numeric_value": 14.9,
+        "unit": "g/dL",
+        "reference_range": "14 - 17.4",
+        "status": "Normal"
+      },
+      "RBC Count": {
+        "value": 4.57,
+        "numeric_value": 4.57,
+        "unit": "Million/cmm",
+        "reference_range": "4.7 - 6",
+        "status": "Low"
+      },
+      "WBC Count": {
+        "value": 3060.0,
+        "numeric_value": 3060.0,
+        "unit": "/cumm",
+        "reference_range": "4000 - 10000",
+        "status": "Low"
+      },
+      "Platelet Count": {
+        "value": 113000.0,
+        "numeric_value": 113000.0,
+        "unit": "/cumm",
+        "reference_range": "150000 - 450000",
+        "status": "Low"
+      },
+      "Hematocrit": {
+        "value": 44.0,
+        "numeric_value": 44.0,
+        "unit": "%",
+        "reference_range": "41.5 - 50.4",
+        "status": "Normal"
+      },
+      "MCV": {
+        "value": 96.2,
+        "numeric_value": 96.2,
+        "unit": "fL",
+        "reference_range": "80 - 96",
+        "status": "High"
+      },
+      "MCH": {
+        "value": 32.6,
+        "numeric_value": 32.6,
+        "unit": "pg",
+        "reference_range": "27.5 - 33.2",
+        "status": "Normal"
+      },
+      "MCHC": {
+        "value": 33.9,
+        "numeric_value": 33.9,
+        "unit": "g/dL",
+        "reference_range": "33.4 - 35.5",
+        "status": "Normal"
+      },
+      "RDW CV": {
+        "value": 16.1,
+        "numeric_value": 16.1,
+        "unit": "%",
+        "reference_range": "11.5 - 15",
+        "status": "High"
+      },
+      "Neutrophils": {
+        "value": 72.0,
+        "numeric_value": 72.0,
+        "unit": "%",
+        "reference_range": "45 - 75",
+        "status": "Normal"
+      },
+      "Lymphocytes": {
+        "value": 20.0,
+        "numeric_value": 20.0,
+        "unit": "%",
+        "reference_range": "20 - 45",
+        "status": "Normal"
+      },
+      "Eosinophils": {
+        "value": 1.0,
+        "numeric_value": 1.0,
+        "unit": "%",
+        "reference_range": "1 - 6",
+        "status": "Normal"
+      },
+      "Monocytes": {
+        "value": 7.0,
+        "numeric_value": 7.0,
+        "unit": "%",
+        "reference_range": "2 - 10",
+        "status": "Normal"
+      },
+      "SGPT": {
+        "value": 50.0,
+        "numeric_value": 50.0,
+        "unit": "U/L",
+        "reference_range": "0 - 50",
+        "status": "Normal"
+      },
+      "CRP": {
+        "value": 44.0,
+        "numeric_value": 44.0,
+        "unit": "mg/L",
+        "reference_range": "0 - 5",
+        "status": "High"
+      }
+    },
+    "qualitative_results": []
+  },
+  {
+    "report_id": "0a55bf6ba2fe40d2b7dfd1a3115a582e",
+    "file_hash": "d12e8979dccefcebd8e0d41d321fc427a781e0db23c3f543678fa740562d7a24",
+    "report_name": "f650c04eef1b4bf428e9.png",
+    "report_type": "HbA1c Report",
+    "test_name": "HbA1c",
+    "test_result": "All 1 Parameters Normal",
+    "patient_info": {
+      "age": "23 Years",
+      "gender": "Male",
+      "report_status": "Reported",
+      "report_date": "03/05/2024 10:43 AM"
+    },
+    "report_date": "03/05/2024 10:43 AM",
+    "report_date_display": "03 May 2024",
+    "analysis_date": "15 November 2026, 05:58 PM",
+    "parameters": {
+      "HbA1c": {
+        "value": 5.0,
+        "numeric_value": 5.0,
+        "unit": "%",
+        "reference_range": "4 - 6",
+        "status": "Normal"
+      }
+    },
+    "qualitative_results": []
+  },
+  {
+    "report_id": "758278ebb2d642ab8a037b98ffdbab96",
+    "file_hash": "0bb4f3c5b6a8e22cbfcb9fe0466ecba6c3e784ea798cb470780bc98356d11dbf",
+    "report_name": "67639a75-8a83-4dd9-aade-94d22b0967d9.jpg",
+    "report_type": "Kidney / Renal Function Report",
+    "test_name": "Kidney / Renal Function",
+    "test_result": "4 of 12 Parameters Out of Range",
+    "patient_info": {
+      "age": "26 Years",
+      "gender": "Female",
+      "report_status": "Final",
+      "report_date": "15/11/2026"
+    },
+    "report_date": "15/11/2026",
+    "report_date_display": "15 Nov 2026",
+    "analysis_date": "15 November 2026, 06:52 PM",
+    "parameters": {
+      "Urea": {
+        "value": 24.0,
+        "numeric_value": 24.0,
+        "unit": "mg/dL",
+        "reference_range": "13.00 - 43.00",
+        "status": "Normal"
+      },
+      "BUN": {
+        "value": 11.21,
+        "numeric_value": 11.21,
+        "unit": "mg/dL",
+        "reference_range": "6.00 - 20.00",
+        "status": "Normal"
+      },
+      "Uric Acid": {
+        "value": 6.0,
+        "numeric_value": 6.0,
+        "unit": "mg/dL",
+        "reference_range": "2.60 - 6.00",
+        "status": "Normal"
+      },
+      "Calcium": {
+        "value": 9.0,
+        "numeric_value": 9.0,
+        "unit": "mg/dL",
+        "reference_range": "8.70 - 10.40",
+        "status": "Normal"
+      },
+      "Phosphorus": {
+        "value": 5.0,
+        "numeric_value": 5.0,
+        "unit": "mg/dL",
+        "reference_range": "2 - 5.1",
+        "status": "Normal"
+      },
+      "Sodium": {
+        "value": 140.0,
+        "numeric_value": 140.0,
+        "unit": "mEq/L",
+        "reference_range": "136.00 - 145.00",
+        "status": "Normal"
+      },
+      "Creatinine": {
+        "value": 2.0,
+        "numeric_value": 2.0,
+        "unit": "mg/dL",
+        "reference_range": "0.55 - 1.02",
+        "status": "High"
+      },
+      "Total Protein": {
+        "value": 8.0,
+        "numeric_value": 8.0,
+        "unit": "g/dL",
+        "reference_range": "5.7 - 820",
+        "status": "Normal"
+      },
+      "Albumin": {
+        "value": 4.3,
+        "numeric_value": 4.3,
+        "unit": "g/dL",
+        "reference_range": "3.5 - 5.0",
+        "status": "Normal"
+      },
+      "Globulin": {
+        "value": 3.7,
+        "numeric_value": 3.7,
+        "unit": "g/dL",
+        "reference_range": "2.3 - 3.5",
+        "status": "High"
+      },
+      "Potassium": {
+        "value": 6.0,
+        "numeric_value": 6.0,
+        "unit": "mEq/L",
+        "reference_range": "3.5 - 5.1",
+        "status": "High"
+      },
+      "Chloride": {
+        "value": 80.0,
+        "numeric_value": 80.0,
+        "unit": "mEq/L",
+        "reference_range": "98 - 107",
+        "status": "Low"
+      }
+    },
+    "qualitative_results": [
+      {
+        "name": "eGFR Category",
+        "result": "G1",
+        "interpretation": "Reported category"
+      }
+    ]
+  },
+  {
+    "report_id": "de0d1ce4a674489ca97333b97e15ed9b",
+    "file_hash": "d58d873ed0f1341cdfde425e979e94e88c9758a568ca0cfeb747f042b38ab85e",
+    "report_name": "N044.pdf",
+    "report_type": "HLA-B27 PCR Report",
+    "test_name": "HLA-B27 PCR",
+    "test_result": "NEGATIVE",
+    "patient_info": {
+      "age": "Not Available",
+      "gender": "Male",
+      "report_status": "Final",
+      "report_date": "15/11/2026"
+    },
+    "report_date": "15/11/2026",
+    "report_date_display": "15 Nov 2026",
+    "analysis_date": "15 November 2026, 06:54 PM",
+    "parameters": {},
+    "qualitative_results": [
+      {
+        "name": "HLA-B27 PCR, QUALITATIVE",
+        "result": "NEGATIVE",
+        "interpretation": "Negative"
+      }
+    ]
+  },
+  {
+    "report_id": "4690e3bc97614808b959d0d91bd13115",
+    "file_hash": "a62ccaf9507d84a4d3bb1e9f738d07d95cb9f26b4d5971bf681c93b0d33db63e",
+    "report_name": "A4sizeSD.png",
+    "report_type": "Kidney / Renal Function Report",
+    "test_name": "Kidney / Renal Function",
+    "test_result": "All 8 Parameters Normal",
+    "patient_info": {
+      "age": "98 Years",
+      "gender": "Female",
+      "report_status": "Reported",
+      "report_date": "16/10/2024 05:31 PM"
+    },
+    "report_date": "16/10/2024 05:31 PM",
+    "report_date_display": "16 Oct 2024",
+    "analysis_date": "15 November 2026, 11:54 PM",
+    "parameters": {
+      "Creatinine": {
+        "value": 1.01,
+        "numeric_value": 1.01,
+        "unit": "mg/dL",
+        "reference_range": "0.55 - 1.02",
+        "status": "Normal"
+      },
+      "Urea": {
+        "value": 22.0,
+        "numeric_value": 22.0,
+        "unit": "mg/dL",
+        "reference_range": "21 - 43",
+        "status": "Normal"
+      },
+      "BUN": {
+        "value": 10.27,
+        "numeric_value": 10.27,
+        "unit": "mg/dL",
+        "reference_range": "7.9 - 20",
+        "status": "Normal"
+      },
+      "Uric Acid": {
+        "value": 4.0,
+        "numeric_value": 4.0,
+        "unit": "mg/dL",
+        "reference_range": "2.6 - 6",
+        "status": "Normal"
+      },
+      "Calcium": {
+        "value": 9.2,
+        "numeric_value": 9.2,
+        "unit": "mg/dL",
+        "reference_range": "8.8 - 10.6",
+        "status": "Normal"
+      },
+      "Sodium": {
+        "value": 138.0,
+        "numeric_value": 138.0,
+        "unit": "mEq/L",
+        "reference_range": "136 - 146",
+        "status": "Normal"
+      },
+      "Potassium": {
+        "value": "3.6",
+        "numeric_value": 3.6,
+        "unit": "mEq/L",
+        "reference_range": "3.5 - 5.1",
+        "status": "Normal"
+      },
+      "Urea/Creatinine Ratio": {
+        "value": 21.78,
+        "numeric_value": 21.78,
+        "unit": "Ratio",
+        "reference_range": "Not clearly recovered from OCR",
+        "status": "Not Available"
+      }
+    },
+    "qualitative_results": [
+      {
+        "name": "eGFR Category",
+        "result": "G3A",
+        "interpretation": "Reported category"
+      }
+    ]
+  }
+]

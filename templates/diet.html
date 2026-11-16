@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Diet &amp; Guidance - HealthCare</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <script>
+        try { document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light'); } catch (e) {}
+    </script>
+</head>
+
+<body>
+
+    <!-- ========================= NAVBAR ========================= -->
+    <header class="navbar">
+        <div class="logo">Health<span>Care</span></div>
+
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('analysis') }}">Analysis</a>
+            <a href="{{ url_for('diet') }}" class="active">Diet &amp; Guidance</a>
+            <a href="{{ url_for('precautions') }}">Precautions</a>
+            <a href="{{ url_for('trends') }}">Health History</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <a href="{{ url_for('upload') }}" class="primary-btn">Upload Report</a>
+        </div>
+    </header>
+
+
+    <!-- ========================= MAIN ========================= -->
+    <main class="diet-section">
+        <div class="diet-container">
+
+            <section class="diet-heading">
+                <p class="tagline">YOUR DAILY DIET PLAN</p>
+                <h1>A Day of Eating, Planned Around Your Report</h1>
+                <p>
+                    {% if report_name and report_name != "No Report Available" %}
+                        Based on <strong>{{ report_name }}</strong>, analysed on {{ analysis_date }}.
+                        Follow it as a rough daily routine: what to have in the morning, afternoon,
+                        evening, at night and before bed.
+                    {% else %}
+                        Upload and analyse a report to personalise this plan. Until then, here is a
+                        balanced everyday routine.
+                    {% endif %}
+                </p>
+            </section>
+
+            {% include "_day_plan.html" %}
+
+            <details class="more-guidance">
+                <summary>More general guidance</summary>
+
+                <div class="guidance-grid">
+                    <div class="guidance-card">
+                        <h2>Foods to Consider</h2>
+                        <ul>{% for item in dietary_guidance %}<li>{{ item }}</li>{% endfor %}</ul>
+                    </div>
+
+                    <div class="guidance-card">
+                        <h2>Foods to Go Easy On</h2>
+                        <ul>
+                            {% for item in limiting_guidance %}<li>{{ item }}</li>
+                            {% else %}<li>No specific foods to limit were flagged from this report.</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <div class="guidance-card">
+                        <h2>Healthy Habits</h2>
+                        <ul>{% for item in health_habits %}<li>{{ item }}</li>{% endfor %}</ul>
+                    </div>
+                </div>
+            </details>
+
+            <section class="analysis-disclaimer">
+                <div class="disclaimer-icon">!</div>
+                <div>
+                    <h3>General Information Only</h3>
+                    <p>
+                        This plan is educational guidance generated from your report. It is not a
+                        medical diet prescription. Please talk to a doctor or dietitian before making
+                        big changes, especially if you take medicines or have other health conditions.
+                    </p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+
+    <!-- ========================= FOOTER ========================= -->
+    <footer class="footer">
+        <p>Health Report Understanding &amp; Monitoring System</p>
+        <p>For general informational purposes only.</p>
+    </footer>
+
+    <div class="floating-theme-switcher">
+        <button id="themeToggleBtn" class="theme-toggle-btn" onclick="toggleNextTheme()">🌙</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
